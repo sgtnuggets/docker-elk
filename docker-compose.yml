@@ -24,6 +24,7 @@ services:
       - ./logstash/pipeline:/usr/share/logstash/pipeline
     ports:
       - "5000:5000"
+      - "8080:8080"
     networks:
       - docker_elk
     depends_on:
